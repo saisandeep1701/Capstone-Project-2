@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fbfc;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+hr {
+  margin: 40px 0 20px 0;
+  border: none;
+  border-top: 1px solid #e0e3e7;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+.background-container {
+  background-image: url('./fullstack image.jpg');
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.name-container {
+  font-family:'Times New Roman', Times, serif;
+  color:#6e8ba6;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  background: rgba(255,255,255,0.2);
+  padding: 40px 25px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.name-container h1 {
+  margin: 0 0 15px 0;
+  font-size: 2.2em;
+}
+.name-container p {
+  margin: 0;
+  font-size: 1.15em;
+}
+
+.middle-background {
+  background-image: url('./pexels-knownasovan-62693.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+}
+
+.middle-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.profile {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #fff;
+}
+.intro {
+  margin-top: 15px;
+  color: #34495e;
+  font-size: 1.1em;
+  max-width: 500px;
+}
+
+.skills {
+  margin: 30px 0;
+}
+
+.skills h2 {
+  font-size: 1.5em;
+  color: #0077b6;
+  margin-bottom: 18px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.skills-grid > div {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 16px 12px;
+  min-width: 190px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  text-align: left;
+}
+.skills-grid h4 {
+  margin-bottom: 7px;
+  color: #226798;
+}
+
+.skills-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  min-width: 220px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  flex: 1 1 300px;
+}
+.skill-item h3 {
+  margin-bottom: 10px;
+  color: #216e7b;
+}
+
+.contact-me {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.contact-me h2 {
+  font-size: 1.3em;
+  color: #007BFF;
+  margin-bottom: 8px;
+}
+.contact-me h3 {
+  font-size: 1em;
+  color: #212529;
+  margin-bottom: 10px;
+}
+.contact-message {
+  color: #5a6273;
+  margin-bottom: 15px;
+}
+.contact-me .btn {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.05em;
+  font-weight: bold;
+  transition: background 0.20s;
+  display: inline-block;
+}
+.contact-me .btn:hover {
+  background: #0059b2;
+}
+
+.bottom-container {
+  background-image: url('./pexels-tbee-14592-82256.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.links {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.16s;
+}
+.footer-link:hover {
+  text-decoration: underline;
+  color: #0059b2;
+}
+
+.copyright {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* ========== Responsive Media Queries ========== */
+
+@media (max-width: 900px) {
+  .background-container {
+    height: 250px;
+  }
+  .profile {
+    width: 80px;
+    height: 80px;
+  }
+  .skills-grid, .skills-showcase {
+    gap: 15px;
+  }
+  .skill-item {
+    max-width: 240px;
+    min-width: 180px;
+  }
+  .middle-background {
+    padding: 25px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container,
+  .middle-background,
+  .bottom-container {
+    padding: 8px;
+  }
+
+  .background-container {
+    height: 110px;
+    padding: 0;
+  }
+  .name-container h1 {
+    font-size: 1.2em;
+  }
+  .name-container {
+    padding: 16px 8px;
+  }
+
+  .skills-grid,
+  .skills-showcase {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    gap: 9px;
+  }
+  .skill-item, .skills-grid > div {
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .profile {
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+  }
+
+  .footer-link {
+    display: block;
+    margin: 8px auto;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .name-container h1 {
+    font-size: .98em;
+  }
+  .contact-me .btn {
+    font-size: .9em;
+    padding: 7px 8px;
+  }
+  .skill-item, .skills-grid > div {
+    padding: 10px 4px;
+  }
+}
